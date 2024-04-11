@@ -1,18 +1,22 @@
-import { useState } from "react";
 
 import "./App.css";
 
 import About from "./sections/About";
 // import NavBar from './sections/Navbar'
-
+import Skills from './sections/Skills';
 import NavBar from "./sections/NavBar";
+import Experience from "./sections/Experience";
+import Project from "./sections/Project";
 function App() {
-  const [count, setCount] = useState(0);
+ 
 
   return (
     <>
       <NavBar />
       <About />
+      <Skills/>
+      <Experience />
+      <Project/>
     </>
   );
 }

@@ -33,9 +33,9 @@ const NavBar = () => {
     <Router>
       <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
         <Container>
-          <Navbar.Brand href="/">
+          {/* <Navbar.Brand href="/">
             <img src={logo} alt="Logo" />
-          </Navbar.Brand>
+          </Navbar.Brand> */}
           <Navbar.Toggle aria-controls="basic-navbar-nav">
             <span className="navbar-toggler-icon"></span>
           </Navbar.Toggle>
@@ -95,7 +95,8 @@ const NavBar = () => {
                 </a>
               </div> */}
 
-              <HashLink to="#connect">
+              {/* <HashLink to="#connect"> */}
+              <HashLink href="">
                 <button className="vvd" onClick={() => console.log("connect")}>
                   Let’s Connect <Linkedin className="social-icon" size={25}/>
                

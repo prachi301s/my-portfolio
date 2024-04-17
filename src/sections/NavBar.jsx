@@ -28,6 +28,9 @@ const NavBar = () => {
   const onUpdateActiveLink = (value) => {
     setActiveLink(value);
   };
+  const handleConnectClick = () => {
+    window.open("https://www.linkedin.com/in/prachi-sahu01/");
+  };
 
   return (
     <Router>
@@ -83,30 +86,10 @@ const NavBar = () => {
               </Nav.Link>
             </Nav>
             <span className="navbar-text">
-              {/* <div className="social-icon">
-                <a href="#">
-                  <img src={navIcon1} alt="" />
-                </a>
-                <a href="#">
-                  <img src={navIcon2} alt="" />
-                </a>
-                <a href="#">
-                  <img src={navIcon3} alt="" />
-                </a>
-              </div> */}
-
-              {/* <HashLink to="#connect"> */}
-              <HashLink href="">
-                <button className="vvd" onClick={() => console.log("connect")}>
-                  Let’s Connect <Linkedin className="social-icon" size={25}/>
-               
-                </button>
-              
-              </HashLink>
+              <button className="vvd" onClick={handleConnectClick}>
+                Let’s Connect <Linkedin className="social-icon" size={25} />
+              </button>
             </span>
-            {/* <button onClick={() => console.log("connect")}>
-                  Let’s Connect <ArrowRightCircle size={25} />
-                </button> */}
           </Navbar.Collapse>
         </Container>
       </Navbar>

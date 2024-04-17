@@ -7,7 +7,9 @@ import colorSharp2 from "../assets/img/color-sharp2.png";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 import Cards from "../component/Cards";
-import Experience from "./Experience";
+// import Experience from "./Experience";
+import mactoImg from "../assets/img/mactosys.png";
+import careerDream from "../assets/img/careerDream.png";
 const Project = () => {
   const projects = [
     {
@@ -41,7 +43,18 @@ const Project = () => {
       imgUrl: projImg3,
     },
   ];
-
+  const experiences = [
+    {
+      title: "Careers Dream Education",
+      description: "Web Development",
+      imgUrl: careerDream,
+    },
+    {
+      title: "Mactosys Technologies",
+      description: "ReactJs Developer",
+      imgUrl: mactoImg,
+    },
+  ];
   return (
     <section className="project" id="projects">
       <Container>
@@ -86,7 +99,11 @@ const Project = () => {
                         </Row>
                       </Tab.Pane>
                       <Tab.Pane eventKey="second">
-                        <Experience/>
+                      <Row>
+                          {experiences.map((items, index) => {
+                            return <Cards key={index} {...items} />;
+                          })}
+                        </Row>
                         {/* <p>
                           Lorem ipsum dolor sit amet consectetur adipisicing
                           elit. Cumque quam, quod neque provident velit, rem

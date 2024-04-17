@@ -344,7 +344,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   overflow: hidden;
 }
 .skill .nav.nav-pills .nav-item {
-  width:33.3333%;
+  width:50%;
 }
 .skill .nav.nav-pills .nav-link {
   background-color: transparent;
@@ -376,8 +376,33 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .skill .nav.nav-pills .nav-link.active::before {
     width: 100% !important;
 }
+.skill-img-mainbox{
+  position: relative;
+  
+  /* border: 1px solid red; */
+  padding: 20px;
+  border-radius: 5px;
+  margin: auto;
+  justify-content: center;
+  /* text-align: center;
+  align-items: center; */
+}
+.skill-img{
+  width: 8rem;
+  height: auto;
+  /* border: 1px solid red; */
+  height: auto;
+  border-radius: 50%;
+
+
+}
+.skill-text{
+  width: 8rem;
+}
+
 /* .skill h2 {
-	font-size: 45px;
+	font-siz
+  : 45px;
 	font-weight: 700;
 }
 .skill p {
@@ -485,6 +510,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-radius: 30px;
   overflow: hidden;
   margin-bottom: 24px;
+  width: 100%;
 }
 .proj-imgbx::before {
   content: "";

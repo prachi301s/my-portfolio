@@ -12,6 +12,8 @@ import oops from "../assets/img/java.png";
 import muiLogo from "../assets/img/mui.png";
 import antDlogo from "../assets/img/ant-design.png";
 import mantineLogo from "../assets/img/mantine.png";
+import routerLogo from "../assets/img/react-router.png";
+import i18n from "../assets/img/i18next.png";
 const Skills = () => {
   const responsive = {
     superLargeDesktop: {
@@ -86,15 +88,15 @@ const Skills = () => {
       imgUrl: mantineLogo,
     },
     {
-      title: "React",
+      title: "Router",
 
-      imgUrl: reactLogo,
+      imgUrl: routerLogo,
     },
-    // {
-    //   title: "Redux/Redux-Toolkit",
+    {
+      title: "I18n",
 
-    //   imgUrl: reduxLogo,
-    // },
+      imgUrl: i18n,
+    },
     // {
     //   title: "React Query",
 
@@ -137,7 +139,7 @@ const Skills = () => {
                         </Nav.Item> */}
                         <Nav.Item>
                           <Nav.Link eventKey="third">
-                            React Component Liberaries
+                            React Liberaries
                           </Nav.Link>
                         </Nav.Item>
                       </Nav>

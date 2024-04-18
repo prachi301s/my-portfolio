@@ -45,13 +45,15 @@ const Project = () => {
   ];
   const experiences = [
     {
-      title: "Careers Dream Education",
-      description: "Web Development",
+      description: "Careers Dream Education",
+      title: "Web Development ",
+      period:"(Aug 2022 - Nov 2022)",
       imgUrl: careerDream,
     },
     {
-      title: "Mactosys Technologies",
-      description: "ReactJs Developer",
+      description: "Mactosys Technologies",
+      title: "ReactJs Developer ",
+      period:"(Feb 2023 - Present)",
       imgUrl: mactoImg,
     },
   ];

@@ -1,8 +1,8 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
-
-import projImg1 from "../assets/img/project-img1.png";
-import projImg2 from "../assets/img/project-img2.png";
-import projImg3 from "../assets/img/project-img3.png";
+import clone from "../assets/img/zoomclone.png"
+import ecommerce from "../assets/img/ecommerceProject.png";
+import admin from "../assets/img/adminImg.png";
+import crm from "../assets/img/crm.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
@@ -10,38 +10,50 @@ import Cards from "../component/Cards";
 // import Experience from "./Experience";
 import mactoImg from "../assets/img/mactosys.png";
 import careerDream from "../assets/img/careerDream.png";
+import ProjectCard from "../component/ProjectCard";
 const Project = () => {
   const projects = [
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg1,
+      title: "Zoomcar Clone",
+      description: "Demo Project",
+      imgUrl: clone,
+      projectUrl:"https://zoomcar-gza9rpxaa-frontend7.vercel.app/"
+    },
+   
+    {
+      title: "Grocery Store",
+      description: "E-commerce website",
+      imgUrl: ecommerce,
+      projectUrl:"https://abhik8461.github.io/fruitables/index.html"
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
+      title: "Admin Panel",
+      description: "Live project Template",
+    imgUrl: admin,
+    projectUrl:"https://admin-panel-3peo1wles-frontend7.vercel.app/"
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
+      title: "Crm Website",
+      description: "CRM Website Template",
+      imgUrl: crm,
+      projectUrl:"https://crm-website-b755udynd-frontend7.vercel.app/ "
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg1,
+      title: "Real Estate Property website",
+      description: "Live Project",
+      imgUrl: ecommerce,
+      projectUrl:"https://nextflat.ch/"
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
+      title: "Admin Panel",
+      description: "Design for Real estate Property website",
+      imgUrl: admin,
     },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
-    },
+    // {
+    //   title: "Business Startup",
+    //   description: "Design & Development",
+    //   // imgUrl: projImg3,
+    // },
   ];
   const experiences = [
     {
@@ -96,7 +108,7 @@ const Project = () => {
                       <Tab.Pane eventKey="first">
                         <Row>
                           {projects.map((project, index) => {
-                            return <Cards key={index} {...project} />;
+                            return <ProjectCard key={index} {...project} />;
                           })}
                         </Row>
                       </Tab.Pane>

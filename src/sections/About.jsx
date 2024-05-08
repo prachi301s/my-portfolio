@@ -5,6 +5,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import { ArrowDownCircle, ArrowRightCircle } from "react-bootstrap-icons";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
+import prachiResume from '../prachi_resume_2024.pdf';
 const About = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
@@ -83,8 +84,17 @@ const About = () => {
                     type specimen book.
                   </p>
                   <button onClick={() => console.log("connect")}>
-                    Resume <ArrowDownCircle size={25}/>
-                     {/* <ArrowDoCircle size={25} /> */}
+                  <a
+                    href={prachiResume}
+                    download="Prachi-Resume"
+                    target="_blank"
+                    rel="noreferrer"
+                    style={{textDecoration:"none",color:"white"}}
+                  >
+                    Resume
+                   <ArrowDownCircle size={25} />
+                  </a>
+                    
                   </button>
                 </div>
               )}

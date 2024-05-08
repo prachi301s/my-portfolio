@@ -17,26 +17,26 @@ const Project = () => {
       title: "Zoomcar Clone",
       description: "Demo Project",
       imgUrl: clone,
-      projectUrl:"https://zoomcar-gza9rpxaa-frontend7.vercel.app/"
+      projectUrl: 'https://zoomcar-beige.vercel.app/' 
     },
    
     {
       title: "Grocery Store",
       description: "E-commerce website",
       imgUrl: ecommerce,
-      projectUrl:"https://abhik8461.github.io/fruitables/index.html"
+      projectUrl: "https://abhik8461.github.io/fruitables/index.html"
     },
     {
       title: "Admin Panel",
       description: "Live project Template",
     imgUrl: admin,
-    projectUrl:"https://admin-panel-3peo1wles-frontend7.vercel.app/"
+    projectUrl:"https://admin-panel-two-pied.vercel.app/"
     },
     {
       title: "Crm Website",
       description: "CRM Website Template",
       imgUrl: crm,
-      projectUrl:"https://crm-website-b755udynd-frontend7.vercel.app/ "
+      projectUrl:"https://crm-website-ten.vercel.app/ "
     },
     {
       title: "Real Estate Property website",
